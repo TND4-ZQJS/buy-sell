@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Shareholder Protection Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Shareholder Protection Planner</h1>
+
+  <!-- Company Info -->
+  <div class="card">
+    <h2>Company Information</h2>
+    <input id="companyName" placeholder="Company Name">
+    <input id="companyValue" type="number" placeholder="Business Valuation (RM)">
+  </div>
+
+  <!-- Shareholders -->
+  <div class="card">
+    <h2>Shareholders</h2>
+
+    <table id="shareholderTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Share %</th>
+          <th>Existing Cover</th>
+          <th>Annual Premium</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <button onclick="addRow()">+ Add Shareholder</button>
+  </div>
+
+  <button class="calc-btn" onclick="calculate()">Calculate</button>
+
+  <!-- Results -->
+  <div id="results"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
